@@ -12,7 +12,7 @@ class TaskSchema extends Schema {
         .unsigned()
         .notNullable()
         .references('id')
-        .inTable('users')
+        .inTable('projects')
         .onUpdate('CASCADE')
         .onDelete('CASCADE')
       table
@@ -30,7 +30,7 @@ class TaskSchema extends Schema {
         .onUpdate('CASCADE')
         .onDelete('SET NULL')
       table.string('title').notNullable()
-      table.text('description').notNullable()
+      table.text('description')
       table.timestamp('due_date')
       table.timestamps()
     })
