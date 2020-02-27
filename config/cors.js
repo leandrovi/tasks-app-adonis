@@ -16,7 +16,8 @@ module.exports = {
   | Function - Receives the current origin and should return one of the above values.
   |
   */
-  origin: false,
+  origin: true,
+  // origin: [leandrovi.com.br],
 
   /*
   |--------------------------------------------------------------------------
